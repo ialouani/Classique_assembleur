@@ -1,0 +1,4 @@
+test1: plusun.o code1.c
+	gcc -o test1 plusun.o code1.c
+plusun.o: plusun.s
+	yasm -felf64 plusun.s
